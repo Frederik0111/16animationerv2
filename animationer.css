@@ -1,0 +1,193 @@
+/* Animation 1: Falling
+   Bolden falder konstant fra oven. */
+.falling {
+    animation-name: falling;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+    0% {
+        transform: translate(0,-300%);
+    }
+
+    100% {
+        transform: translate(0,300%);
+    }
+    
+}
+
+
+.bouncing {
+    animation-name: bouncing;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bouncing {
+    0% {
+        transform: translate(0,-150%);
+    }
+
+    100% {
+        transform: translate(0,150%);
+    }
+    
+}
+
+.drop {
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+    0% {
+        transform: translate(0,-300%);
+    }
+
+    100% {
+        transform: translate(0,150%);
+    }
+    
+}
+/* skal have noget hjælp til den her */
+.pattern {
+    animation-name: pattern;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pattern {
+    0% {
+        transform: translate(1,1);
+    }
+
+    25% {
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(-300%,-300%);
+    }
+
+    100% {
+        transform: translate(300%,300%);
+    }
+    
+}
+
+.zoom_out {
+    animation-name: zoom_out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      
+} 
+
+@keyframes zoom_out {
+    0% {
+        transform: scale(1,1)
+    }
+
+    100% {
+        transform: scale(0,0)
+    }
+
+}
+
+.zoom_in {
+    animation-name: zoom_in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+      
+} 
+
+@keyframes zoom_in {
+    0% {
+        transform: scale(1,1)
+    }
+
+    100% {
+        transform: scale(10,10)
+    }
+
+}
+
+.fade_out {
+    animation-name: fade_out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+      
+} 
+
+@keyframes fade_out {
+    0% { 
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.fade_in {
+    animation-name: fade_in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+      
+} 
+
+@keyframes fade_in {
+    0% { 
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.rotation2 {
+    animation-name: rotation2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation2 {
+    100% {
+        rotate: 360deg;  
+    }
+}
+/* jeg skal have hjælp til at rotate ud fra center */
+.rotation2 {
+    transform-origin: bottom;
+}
+
